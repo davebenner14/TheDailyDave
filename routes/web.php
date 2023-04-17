@@ -20,7 +20,7 @@ Route::get('/', function () {
         logger($query->sql, $query->bindings);
     });
     return view('posts', [
-        'posts' => Post::with('category')->get()
+        'posts' => Post::latest()->with('category', 'author')->get()
     ]);
 });
 
