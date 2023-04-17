@@ -2,53 +2,25 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
+use App\Models\Post;
 use App\Models\User;
-use App\Models\Category;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-  
     /**
      * Seed the application's database.
+     *
+     * @return void
      */
-    public function run(): void
+    public function run()
     {
-
-        User::truncate();
-        Category::truncate();
-        
-        $user = User::factory()->create();
-
-        Category::create([
-            'name' => 'Personal',
-            'slug' => 'personal',
+        $user = User::factory()->create([
+            'name' => 'John Doe'
         ]);
 
-        Category::create([
-            'name' => 'Work',
-            'slug' => 'work',
-        ]);
-
-        Category::create([
-            'name' => 'Family',
-            'slug' => 'family',
+        Post::factory(5)->create([
+            'user_id' => $user->id
         ]);
     }
 }
-
-Post::create([
-    'user_id' => $user->id,
-    'category_id' => $family->id,
-    'title' => 'My first post',
-    'slug' => 'my-first-post',
-    'excerpt' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies tincidunt, nisl nisl aliquam nisl, nec aliquam nisl nisl eu n</p>',
-]);
-
-Post::create([
-    'user_id' => $user->id,
-    'category_id' => $work->id,
-    'title' => 'My second post',
-    'slug' => 'my-second-post',
-    'excerpt' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies tincidunt, nisl nisl aliquam nisl, nec aliquam nisl nisl eu n</p>',
-]);
