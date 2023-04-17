@@ -14,11 +14,16 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', function () {
+    \Illuminate\Support\Facades\DB::listen(function ($query) {
+        logger($query->sql, $query->bindings);
+    });
     return view('posts', [
-        'posts' => Post::all()
+        'posts' => Post::with('category')->get()
     ]);
 });
+
 
 Route::get('posts/{post:slug}', function (Post $post) {
     return view('post', [
