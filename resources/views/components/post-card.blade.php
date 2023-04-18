@@ -11,7 +11,7 @@
         <div class="mt-6 flex flex-col justify-between flex-1">
             <header>
                 <div class="space-x-2">
-                    <x-category-button :category="$post->category" />
+                   <x-category-button :category="$post->category" />
                 </div>
 
                 <div class="mt-4">
@@ -27,10 +27,8 @@
                 </div>
             </header>
 
-            <div class="text-sm mt-4">
-                <p>
-                    {{ $post->excerpt }}
-                </p>
+            <div class="text-sm mt-4 space-y-4">
+                {!! $post->excerpt !!}
             </div>
 
             <footer class="flex justify-between items-center mt-8">
@@ -44,7 +42,7 @@
 
                 <div>
                     <a href="/posts/{{ $post->slug }}"
-                        class="transition-colors duration-300 text-xs font-semibold bg-gray-200 hover:bg-gray-300 rounded-full py-2 px-8"
+                       class="transition-colors duration-300 text-xs font-semibold bg-gray-200 hover:bg-gray-300 rounded-full py-2 px-8"
                     >Read More</a>
                 </div>
             </footer>
