@@ -20,27 +20,32 @@
 <body style="font-family: Open Sans, sans-serif">
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
-            <div class="fixed top-[-2rem] left-4">
+            <div class="fixed top-[-2rem] left-4 inline-flex items-center">
                 <a href="https://davebenner.ca" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600 transition-colors duration-200 inline-flex items-center">
                     <img src="/images/DaveLogo-removebg-preview.png" style="max-width: 80px; max-height: 80px;">
-                    <span class="ml-2 font-bold">davebenner.ca</span>
+                    <span class="ml-2 font-bold uppercase">DAVEBENNER.CA</span>
+                </a>
+                <a href="#" class="hover:text-gray-600 transition-colors duration-200 inline-flex items-center ml-4">
+                    <img src="" style="max-width: 20px; max-height: 20px;">
+                    <span class="ml-2 font-bold uppercase">BACK TO TOP</span>
                 </a>
             </div>            
         </nav>
-            <div class="container mx-auto">
-                <div class="fixed top-4 right-4 flex items-center justify-around space-x-4 icon-container">
-                    @auth
-                    <span class="text-xs font-bold uppercase">Welcome, {{ auth()->user()->name }}!</span>
-
-                    <form method="POST" action="/logout" class="text-xs font-semibold text-blue-500 ml-6">
+        
+        <div class="container mx-auto">
+            <div class="fixed top-4 right-4 flex items-center justify-around space-x-4 icon-container">
+                @auth
+                    <span style="font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; text-transform: uppercase;">Welcome, {{ auth()->user()->name }}!</span>
+                    <form method="POST" action="/logout">
                         @csrf
-
-                        <button type="submit">Log Out</button>
+                        <button type="submit" style="font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; text-transform: uppercase;">Log Out</button>
                     </form>
                 @else
-                    <a href="/register" class="text-xs font-bold uppercase">Register</a>
-                    <a href="/login" class="ml-6 text-xs font-bold uppercase">Log In</a>
+                    <a href="/register" style="font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; text-transform: uppercase;">Register</a>
+                    <a href="/login" class="ml-6" style="font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; text-transform: uppercase;">Log In</a>
                 @endauth
+        
+        
                     <span class="inline-block">
                         
                         <a href="https://github.com/davebenner14" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600 transition-colors duration-200">
