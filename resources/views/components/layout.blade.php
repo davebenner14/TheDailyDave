@@ -22,18 +22,27 @@
         <nav class="md:flex md:justify-between md:items-center">
             <div class="fixed top-[-2rem] left-4">
                 <a href="https://davebenner.ca" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600 transition-colors duration-200 inline-flex items-center">
-                    <img
-                        src="/images/DaveLogo-removebg-preview.png"
-                        style="max-width: 80px; max-height: 80px;"
-                    />
-                    <span class="ml-2">davebenner.ca</span>
+                    <img src="/images/DaveLogo-removebg-preview.png" style="max-width: 80px; max-height: 80px;">
+                    <span class="ml-2 font-bold">davebenner.ca</span>
                 </a>
             </div>            
         </nav>
             <div class="container mx-auto">
                 <div class="fixed top-4 right-4 flex items-center justify-around space-x-4 icon-container">
+                    @auth
+                    <span class="text-xs font-bold uppercase">Welcome, {{ auth()->user()->name }}!</span>
 
+                    <form method="POST" action="/logout" class="text-xs font-semibold text-blue-500 ml-6">
+                        @csrf
+
+                        <button type="submit">Log Out</button>
+                    </form>
+                @else
+                    <a href="/register" class="text-xs font-bold uppercase">Register</a>
+                    <a href="/login" class="ml-6 text-xs font-bold uppercase">Log In</a>
+                @endauth
                     <span class="inline-block">
+                        
                         <a href="https://github.com/davebenner14" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600 transition-colors duration-200">
 
                         <svg
@@ -145,4 +154,5 @@
             </div>
         </footer>
     </section>
+    <x-flash />
 </body>
