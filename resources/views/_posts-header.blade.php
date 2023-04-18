@@ -1,14 +1,13 @@
 <header class="max-w-xl mx-auto mt-20 text-center">
     <h1 class="text-4xl">
-        Latest <span class="text-blue-500">Laravel From Scratch</span> News
+        The <span class="text-blue-500">Daily</span> Dave
     </h1>
 
-    <h2 class="inline-flex mt-2">By Lary Laracore <img src="/images/lary-head.svg"
+    <h2 class="inline-flex mt-2">By David Benner <img src="/images/lary-head.svg"
                                                     alt="Head of Lary the mascot"></h2>
 
     <p class="text-sm mt-14">
-        Another year. Another update. We're refreshing the popular Laravel series with new content.
-        I'm going to keep you guys up to speed with what's going on!
+        Welcome to The Daily Dave - Your source for news and blogs! Our website provides a platform for people to share their thoughts and stories. Join the conversation by commenting and posting about current events, interesting stories, and more. Stay up-to-date with the latest news by checking The Daily Dave every day.
     </p>
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
