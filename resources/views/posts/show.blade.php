@@ -10,13 +10,14 @@
                 </p>
 
                 <div class="flex items-center lg:justify-center text-sm mt-4">
-                    <img src="/images/lary-avatar.svg" alt="Lary avatar">
+                    <img src="https://i.pravatar.cc/60?u={{ random_int(1, 100) }}" alt="Avatar" width="40" height="40" class="rounded-full">
                     <div class="ml-3 text-left">
                         <h5 class="font-bold">
                             <a href="/?author={{ $post->author->username }}">{{ $post->author->name }}</a>
                         </h5>
                     </div>
                 </div>
+                
             </div>
 
             <div class="col-span-8">

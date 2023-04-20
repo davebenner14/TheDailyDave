@@ -1,13 +1,13 @@
-<nav class="md:flex md:justify-between md:items-center">
+{{-- <nav class="md:flex md:justify-between md:items-center"> --}}
     <div class="fixed top-[-2rem] left-4 inline-flex items-center">
         <a href="https://davebenner.ca" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600 transition-colors duration-200 inline-flex items-center">
             <img src="/images/DaveLogo-removebg-preview.png" style="max-width: 80px; max-height: 80px;">
             <span class="ml-2 font-bold uppercase">DAVEBENNER.CA</span>
         </a>
-        <a href="#" class="hover:text-gray-600 transition-colors duration-200 inline-flex items-center ml-4">
+        {{-- <a href="#" class="hover:text-gray-600 transition-colors duration-200 inline-flex items-center ml-4">
             <img src="" style="max-width: 20px; max-height: 20px;">
-            <span class="ml-2 font-bold uppercase">BACK TO TOP</span>
-        </a>
+            <span class="ml-2 font-bold uppercase">Laracasts Logo</span>
+        </a> --}}
     </div>            
 </nav>
 
