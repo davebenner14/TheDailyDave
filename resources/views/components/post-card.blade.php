@@ -3,7 +3,7 @@
 <article
     {{ $attributes->merge(['class' => 'transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl']) }}>
     <div class="py-6 px-5 h-full flex flex-col">
-{
+
         <div>
             @if ($post->category->name === 'Education')
                 <img src="{{ asset('images/education.png') }}" alt="Education illustration" class="rounded-xl w-70 h-48 object-contain">
