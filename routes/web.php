@@ -27,3 +27,5 @@ Route::post('logout', [SessionsController::class, 'destroy'])->middleware('auth'
 Route::middleware('can:admin')->group(function () {
     Route::resource('admin/posts', AdminPostController::class)->except('show');
 });
+
+// this is a test
