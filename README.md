@@ -35,6 +35,6 @@ php artisan serve
 
 ## Note
 
-The subscribe feature of this project does not include an API. To access the website, please [click here for website](#).
+The subscribe feature of this project does not include an API. To access the website, please [click here for website](#) -> Currently having issues deploying website, please check back soon.
 
 Thank you for your interest in The Daily Dave!
