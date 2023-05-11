@@ -29,9 +29,10 @@ php artisan serve
 
 ## Screenshots
 
-![Screenshot 1](/screenshots/screenshot1.png)
-![Screenshot 2](/screenshots/screenshot2.png)
-![Screenshot 3](/screenshots/screenshot3.png)
+![Screenshot 1](/Users/davidbenner/Documents/laravel/blog/Screenshots/Screenshot1.png)
+![Screenshot 2](Screenshots/Screenshot2.png)
+![Screenshot 3](Screenshots/Screenshot3.png)
+![Screenshot 4](/Users/davidbenner/Documents/laravel/blog/Screenshots/Screenshot4.png)
 
 ## Note
 
