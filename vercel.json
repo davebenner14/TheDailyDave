@@ -1,9 +1,18 @@
 {
-    "builds": [
-        {
-            "src": "index.php",
-            "use": "@vercel/php",
-            "config": {}
+    "version": 2,
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.2.1"
         }
-    ]
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "api/index.php"
+        }
+    ],
+    "env": {
+        "APP_KEY": "base64:GFnOdbN85IxdMJM+JxoZDk8k0HtvCIK4kWl3j8K+0iU="
+    },
+    "regions": ["sfo"]
 }

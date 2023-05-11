@@ -17,16 +17,16 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
@@ -49,6 +49,7 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'T' => 
         array (
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
+            'ThomasMarinissen\\LaravelVercel\\' => 31,
             'Tests\\' => 6,
             'Termwind\\' => 9,
         ),
@@ -111,7 +112,6 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'M' => 
         array (
             'Monolog\\' => 8,
-            'MailchimpMarketing\\' => 19,
         ),
         'L' => 
         array (
@@ -187,6 +187,10 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
+        ),
+        'ThomasMarinissen\\LaravelVercel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thomasmarinissen/laravel-vercel/src',
         ),
         'Tests\\' => 
         array (
@@ -377,10 +381,6 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'MailchimpMarketing\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mailchimp/marketing/lib',
-        ),
         'League\\MimeTypeDetection\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
@@ -517,6 +517,7 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AdminPostController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminPostController.php',
         'App\\Http\\Controllers\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommentController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\PostCommentsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostCommentsController.php',
@@ -542,6 +543,8 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Services\\MailchimpNewsletter' => __DIR__ . '/../..' . '/app/Services/MailchimpNewsletter.php',
+        'App\\Services\\Newsletter' => __DIR__ . '/../..' . '/app/Services/Newsletter.php',
         'App\\View\\Components\\CategoryDropdown' => __DIR__ . '/../..' . '/app/View/Components/CategoryDropdown.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
@@ -654,7 +657,6 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\CategoryFactory' => __DIR__ . '/../..' . '/database/factories/CategoryFactory.php',
-        'Database\\Factories\\CommentFactory' => __DIR__ . '/../..' . '/database/factories/CommentFactory.php',
         'Database\\Factories\\PostFactory' => __DIR__ . '/../..' . '/database/factories/PostFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
@@ -3123,38 +3125,6 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
         'League\\MimeTypeDetection\\OverridingExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php',
-        'MailchimpMarketing\\ApiClient' => __DIR__ . '/..' . '/mailchimp/marketing/lib/ApiClient.php',
-        'MailchimpMarketing\\ApiException' => __DIR__ . '/..' . '/mailchimp/marketing/lib/ApiException.php',
-        'MailchimpMarketing\\Api\\AccountExportApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/AccountExportApi.php',
-        'MailchimpMarketing\\Api\\AccountExportsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/AccountExportsApi.php',
-        'MailchimpMarketing\\Api\\ActivityFeedApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/ActivityFeedApi.php',
-        'MailchimpMarketing\\Api\\AuthorizedAppsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/AuthorizedAppsApi.php',
-        'MailchimpMarketing\\Api\\AutomationsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/AutomationsApi.php',
-        'MailchimpMarketing\\Api\\BatchWebhooksApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/BatchWebhooksApi.php',
-        'MailchimpMarketing\\Api\\BatchesApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/BatchesApi.php',
-        'MailchimpMarketing\\Api\\CampaignFoldersApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/CampaignFoldersApi.php',
-        'MailchimpMarketing\\Api\\CampaignsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/CampaignsApi.php',
-        'MailchimpMarketing\\Api\\ConnectedSitesApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/ConnectedSitesApi.php',
-        'MailchimpMarketing\\Api\\ConversationsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/ConversationsApi.php',
-        'MailchimpMarketing\\Api\\CustomerJourneysApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/CustomerJourneysApi.php',
-        'MailchimpMarketing\\Api\\EcommerceApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/EcommerceApi.php',
-        'MailchimpMarketing\\Api\\FacebookAdsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/FacebookAdsApi.php',
-        'MailchimpMarketing\\Api\\FileManagerApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/FileManagerApi.php',
-        'MailchimpMarketing\\Api\\LandingPagesApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/LandingPagesApi.php',
-        'MailchimpMarketing\\Api\\ListsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/ListsApi.php',
-        'MailchimpMarketing\\Api\\PingApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/PingApi.php',
-        'MailchimpMarketing\\Api\\ReportingApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/ReportingApi.php',
-        'MailchimpMarketing\\Api\\ReportsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/ReportsApi.php',
-        'MailchimpMarketing\\Api\\RootApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/RootApi.php',
-        'MailchimpMarketing\\Api\\SearchCampaignsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/SearchCampaignsApi.php',
-        'MailchimpMarketing\\Api\\SearchMembersApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/SearchMembersApi.php',
-        'MailchimpMarketing\\Api\\SurveysApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/SurveysApi.php',
-        'MailchimpMarketing\\Api\\TemplateFoldersApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/TemplateFoldersApi.php',
-        'MailchimpMarketing\\Api\\TemplatesApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/TemplatesApi.php',
-        'MailchimpMarketing\\Api\\VerifiedDomainsApi' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Api/VerifiedDomainsApi.php',
-        'MailchimpMarketing\\Configuration' => __DIR__ . '/..' . '/mailchimp/marketing/lib/Configuration.php',
-        'MailchimpMarketing\\HeaderSelector' => __DIR__ . '/..' . '/mailchimp/marketing/lib/HeaderSelector.php',
-        'MailchimpMarketing\\ObjectSerializer' => __DIR__ . '/..' . '/mailchimp/marketing/lib/ObjectSerializer.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegrationAssertPostConditions' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationAssertPostConditions.php',
@@ -6287,6 +6257,8 @@ class ComposerStaticInit3dcb22b6ffdf97996b02fa4971903b76
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'ThomasMarinissen\\LaravelVercel\\Commands\\InstallCommands' => __DIR__ . '/..' . '/thomasmarinissen/laravel-vercel/src/Commands/InstallCommands.php',
+        'ThomasMarinissen\\LaravelVercel\\VercelServiceProvider' => __DIR__ . '/..' . '/thomasmarinissen/laravel-vercel/src/VercelServiceProvider.php',
         'TijsVerkoyen\\CssToInlineStyles\\CssToInlineStyles' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/CssToInlineStyles.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Processor.php',
