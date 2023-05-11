@@ -30,8 +30,8 @@ php artisan serve
 ## Screenshots
 
 ![Screenshot 1](/Users/davidbenner/Documents/laravel/blog/Screenshots/Screenshot1.png)
-![Screenshot 2](Screenshots/Screenshot2.png)
-![Screenshot 3](Screenshots/Screenshot3.png)
+![Screenshot 2](/Users/davidbenner/Documents/laravel/blog/Screenshots/Screenshot2.png)
+![Screenshot 3](/Users/davidbenner/Documents/laravel/blog/Screenshots/Screenshot3.png)
 ![Screenshot 4](/Users/davidbenner/Documents/laravel/blog/Screenshots/Screenshot4.png)
 
 ## Note
